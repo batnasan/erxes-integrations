@@ -1,6 +1,6 @@
 import { debugNylas } from '../debuggers';
 import { sendRPCMessage } from '../messageBroker';
-import { Accounts } from '../models';
+import { inArray } from '../redisClient';
 import { cleanHtml } from '../utils';
 import {
   NylasExchangeConversationMessages,
@@ -60,19 +60,6 @@ const NYLAS_MODELS = {
     conversations: NylasOffice365Conversations,
     conversationMessages: NylasOffice365ConversationMessages,
   },
-};
-
-/**
- * Connect account and add nylas token
- * @param {String} _id
- * @param {String} accountId
- * @param {String} access_token
- */
-const updateAccount = async (_id: string, accountId: string, accessToken: string, billingState: string) => {
-  const selector = { _id };
-  const updateFields = { $set: { uid: accountId, nylasToken: accessToken, billingState } };
-
-  await Accounts.updateOne(selector, updateFields);
 };
 
 /**
@@ -242,12 +229,14 @@ const createOrGetNylasConversationMessage = async ({
     createdAt,
   };
 
+  const isUnreadMessage = await inArray('nylas_unread_messageId', message.id);
+
   // fields to save on api
   const api = {
     customerId,
     conversationId: erxesApiId,
     content: cleanHtml(message.body),
-    unread: message.unread,
+    unread: isUnreadMessage ? true : message.unread,
     createdAt,
   };
 
@@ -318,10 +307,4 @@ export const getOrCreate = async ({ kind, collectionName, selector, fields }: IG
   return selectedObj;
 };
 
-export {
-  createOrGetNylasCustomer,
-  createOrGetNylasConversation,
-  createOrGetNylasConversationMessage,
-  NYLAS_MODELS,
-  updateAccount,
-};
+export { createOrGetNylasCustomer, createOrGetNylasConversation, createOrGetNylasConversationMessage, NYLAS_MODELS };
