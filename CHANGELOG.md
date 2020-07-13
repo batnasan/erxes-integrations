@@ -1,3 +1,81 @@
+## [1.0.2](https://github.com/erxes/erxes-integrations/compare/0.11.2...1.0.2) (2020-07-13)
+
+
+### Bug Fixes
+
+* add try catch in third party request and check env ([b89e39a](https://github.com/erxes/erxes-integrations/commit/b89e39af2ec0261c49534aff0e4b0ffc26b5ed4d))
+* add user middleware ([71d7a4d](https://github.com/erxes/erxes-integrations/commit/71d7a4dafdee6c51a1f79f952c120782ea0de346))
+* await in initConsumer ([a925ca4](https://github.com/erxes/erxes-integrations/commit/a925ca468e01e7a14f7ca6de35f9316133350805))
+* await redis init ([d1b30e6](https://github.com/erxes/erxes-integrations/commit/d1b30e6642a8e5e2c9a00bfe749c5047341a1483))
+* check env in startup and add handle promise error ([8133160](https://github.com/erxes/erxes-integrations/commit/81331607bace41f8c6ac4be30db4fbda7563172e))
+* load dotenv in order to get process.env values ([2ec0463](https://github.com/erxes/erxes-integrations/commit/2ec046356668ba433f45f8d0e4faadd735b915b6))
+* **common:** improved error handlers ([24c894f](https://github.com/erxes/erxes-integrations/commit/24c894f9aa3a14085652316f9305c62727f995e3))
+* **gmail:** add error handle in watchPushNotification ([#89](https://github.com/erxes/erxes-integrations/issues/89)) ([087d423](https://github.com/erxes/erxes-integrations/commit/087d4235600c4a5cbc1beaaccd266771ab3b1b9a))
+* **gmail:** remove account ([#90](https://github.com/erxes/erxes-integrations/issues/90)) ([63b14f0](https://github.com/erxes/erxes-integrations/commit/63b14f0dfe5e06131db489a756f73bbc3ba97d44))
+* **nylas:** send reply email goes to resolved conversation ([a67e5b6](https://github.com/erxes/erxes-integrations/commit/a67e5b632122204723ddc78a00f7dc95ae6254d1)), closes [erxes/erxes#2097](https://github.com/erxes/erxes/issues/2097)
+* merge with master and conflict ([93622fd](https://github.com/erxes/erxes-integrations/commit/93622fdbe33058211d1c7a172484926df934ab3b))
+* **test:** add env to drone.yml for nylas test ([9139a6c](https://github.com/erxes/erxes-integrations/commit/9139a6cd0a6ff862d3c8fa5787ce63622aed0558))
+* **test:** remove colon in drone.yml for nylas test ([6a131a2](https://github.com/erxes/erxes-integrations/commit/6a131a2c6591938dc848260f8080ab5b9da0be3e))
+* remove account only when there is no integrations ([f13c2a9](https://github.com/erxes/erxes-integrations/commit/f13c2a95196cb4eebd632502a39456ee44b45c38))
+* test in nylas and remove unused field in loginMiddleware ([6f87472](https://github.com/erxes/erxes-integrations/commit/6f87472079dd31e3abcb2f66a575c584c2aa4cbd))
+
+
+### Features
+
+* **integration:** auto assign callpro user ([6770a31](https://github.com/erxes/erxes-integrations/commit/6770a3150dd19082be4dffba1f1010ca4c4a0564)), closes [#69](https://github.com/erxes/erxes-integrations/issues/69)
+* **integration:** integrated Viber, Telegram, Line, Twilio Sms using Sunshine Conversation API ([4e56584](https://github.com/erxes/erxes-integrations/commit/4e5658425590c3e9353f1563766366766140f170)), closes [#102](https://github.com/erxes/erxes-integrations/issues/102)
+* **videoCall:** add video call integration using daily.co ([7e61cf8](https://github.com/erxes/erxes-integrations/commit/7e61cf89e4a5637fa5cbbacb7c17dd446180b1a2)), closes [erxes/erxes#1638](https://github.com/erxes/erxes/issues/1638)
+* **whatsapp:** added whatspp integration ([d0c66b6](https://github.com/erxes/erxes-integrations/commit/d0c66b67c17bc0922f120720eb29cb2e7dcbf245)), closes [#77](https://github.com/erxes/erxes-integrations/issues/77)
+* nylas exchange provider ([a51db14](https://github.com/erxes/erxes-integrations/commit/a51db14bd6a0319623db985ffde5249ee4b6575f))
+
+
+### Performance Improvements
+
+* **ci:** upload compiled version to github release assets ([2b9b47e](https://github.com/erxes/erxes-integrations/commit/2b9b47ebc7d08c3a0598c4c9e011361a466272e2))
+* **node:** update package.json for node v12 ([0256c10](https://github.com/erxes/erxes-integrations/commit/0256c10139e41489e3800526881f961e2cae16d5))
+* **nylas:** refactor and remove account ([5d65c81](https://github.com/erxes/erxes-integrations/commit/5d65c81b1279bb5d01c7764758afbaaac99751c7)), closes [erxes/erxes#2072](https://github.com/erxes/erxes/issues/2072)
+* **test:** complete gmail test coverage ([0a94066](https://github.com/erxes/erxes-integrations/commit/0a94066225c94e281e43ddab4c849ef3e45658b0))
+* **test:** improve nylas test coverage ([ab83714](https://github.com/erxes/erxes-integrations/commit/ab837141521db43cb7f64cbcba61ea822a551f21))
+
+# [0.16.0](https://github.com/erxes/erxes-integrations/compare/0.11.2...0.16.0) (2020-07-13)
+
+
+### Bug Fixes
+
+* add try catch in third party request and check env ([b89e39a](https://github.com/erxes/erxes-integrations/commit/b89e39af2ec0261c49534aff0e4b0ffc26b5ed4d))
+* add user middleware ([71d7a4d](https://github.com/erxes/erxes-integrations/commit/71d7a4dafdee6c51a1f79f952c120782ea0de346))
+* await in initConsumer ([a925ca4](https://github.com/erxes/erxes-integrations/commit/a925ca468e01e7a14f7ca6de35f9316133350805))
+* await redis init ([d1b30e6](https://github.com/erxes/erxes-integrations/commit/d1b30e6642a8e5e2c9a00bfe749c5047341a1483))
+* check env in startup and add handle promise error ([8133160](https://github.com/erxes/erxes-integrations/commit/81331607bace41f8c6ac4be30db4fbda7563172e))
+* load dotenv in order to get process.env values ([2ec0463](https://github.com/erxes/erxes-integrations/commit/2ec046356668ba433f45f8d0e4faadd735b915b6))
+* **common:** improved error handlers ([24c894f](https://github.com/erxes/erxes-integrations/commit/24c894f9aa3a14085652316f9305c62727f995e3))
+* **gmail:** add error handle in watchPushNotification ([#89](https://github.com/erxes/erxes-integrations/issues/89)) ([087d423](https://github.com/erxes/erxes-integrations/commit/087d4235600c4a5cbc1beaaccd266771ab3b1b9a))
+* **gmail:** remove account ([#90](https://github.com/erxes/erxes-integrations/issues/90)) ([63b14f0](https://github.com/erxes/erxes-integrations/commit/63b14f0dfe5e06131db489a756f73bbc3ba97d44))
+* **nylas:** send reply email goes to resolved conversation ([a67e5b6](https://github.com/erxes/erxes-integrations/commit/a67e5b632122204723ddc78a00f7dc95ae6254d1)), closes [erxes/erxes#2097](https://github.com/erxes/erxes/issues/2097)
+* merge with master and conflict ([93622fd](https://github.com/erxes/erxes-integrations/commit/93622fdbe33058211d1c7a172484926df934ab3b))
+* **test:** add env to drone.yml for nylas test ([9139a6c](https://github.com/erxes/erxes-integrations/commit/9139a6cd0a6ff862d3c8fa5787ce63622aed0558))
+* **test:** remove colon in drone.yml for nylas test ([6a131a2](https://github.com/erxes/erxes-integrations/commit/6a131a2c6591938dc848260f8080ab5b9da0be3e))
+* remove account only when there is no integrations ([f13c2a9](https://github.com/erxes/erxes-integrations/commit/f13c2a95196cb4eebd632502a39456ee44b45c38))
+* test in nylas and remove unused field in loginMiddleware ([6f87472](https://github.com/erxes/erxes-integrations/commit/6f87472079dd31e3abcb2f66a575c584c2aa4cbd))
+
+
+### Features
+
+* **integration:** auto assign callpro user ([6770a31](https://github.com/erxes/erxes-integrations/commit/6770a3150dd19082be4dffba1f1010ca4c4a0564)), closes [#69](https://github.com/erxes/erxes-integrations/issues/69)
+* **integration:** integrated Viber, Telegram, Line, Twilio Sms using Sunshine Conversation API ([4e56584](https://github.com/erxes/erxes-integrations/commit/4e5658425590c3e9353f1563766366766140f170)), closes [#102](https://github.com/erxes/erxes-integrations/issues/102)
+* **videoCall:** add video call integration using daily.co ([7e61cf8](https://github.com/erxes/erxes-integrations/commit/7e61cf89e4a5637fa5cbbacb7c17dd446180b1a2)), closes [erxes/erxes#1638](https://github.com/erxes/erxes/issues/1638)
+* **whatsapp:** added whatspp integration ([d0c66b6](https://github.com/erxes/erxes-integrations/commit/d0c66b67c17bc0922f120720eb29cb2e7dcbf245)), closes [#77](https://github.com/erxes/erxes-integrations/issues/77)
+* nylas exchange provider ([a51db14](https://github.com/erxes/erxes-integrations/commit/a51db14bd6a0319623db985ffde5249ee4b6575f))
+
+
+### Performance Improvements
+
+* **ci:** upload compiled version to github release assets ([2b9b47e](https://github.com/erxes/erxes-integrations/commit/2b9b47ebc7d08c3a0598c4c9e011361a466272e2))
+* **node:** update package.json for node v12 ([0256c10](https://github.com/erxes/erxes-integrations/commit/0256c10139e41489e3800526881f961e2cae16d5))
+* **nylas:** refactor and remove account ([5d65c81](https://github.com/erxes/erxes-integrations/commit/5d65c81b1279bb5d01c7764758afbaaac99751c7)), closes [erxes/erxes#2072](https://github.com/erxes/erxes/issues/2072)
+* **test:** complete gmail test coverage ([0a94066](https://github.com/erxes/erxes-integrations/commit/0a94066225c94e281e43ddab4c849ef3e45658b0))
+* **test:** improve nylas test coverage ([ab83714](https://github.com/erxes/erxes-integrations/commit/ab837141521db43cb7f64cbcba61ea822a551f21))
+
 ## [0.15.2](https://github.com/erxes/erxes-integrations/compare/0.15.1...0.15.2) (2020-07-07)
 
 ## [0.15.1](https://github.com/erxes/erxes-integrations/compare/0.15.0...0.15.1) (2020-07-07)
